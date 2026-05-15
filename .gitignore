@@ -11,6 +11,11 @@ dist
 build
 storybook-static
 
+# Planning & Specs
+PRD.md
+IMPLEMENTATION_PLAN.md
+LOVABLE_BOLT_PROMPT.md
+
 # Misc
 .DS_Store
 *.pem
