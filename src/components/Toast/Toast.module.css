@@ -1,0 +1,114 @@
+.container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1100;
+  pointer-events: none;
+}
+
+.toast {
+  pointer-events: auto;
+  min-width: 320px;
+  max-width: 420px;
+  padding: 16px 20px;
+  border-radius: var(--ayo-radius-lg);
+  background-color: var(--ayo-color-surface);
+  box-shadow: var(--ayo-shadow-lg);
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  animation: slideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid var(--ayo-slate-200);
+  position: relative;
+  overflow: hidden;
+}
+
+.toast::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+}
+
+.content {
+  flex: 1;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 4px;
+  color: var(--ayo-slate-900);
+}
+
+.message {
+  font-size: 0.875rem;
+  color: var(--ayo-slate-600);
+  line-height: 1.5;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: var(--ayo-slate-400);
+  line-height: 1;
+  padding: 4px;
+  margin-top: -4px;
+  margin-right: -8px;
+  transition: var(--ayo-transition-fast);
+}
+
+.closeButton:hover {
+  color: var(--ayo-slate-600);
+}
+
+/* Status variants */
+.success {
+  background-color: #f0fdf4; /* Emerald 50 */
+  border-color: #bbf7d0; /* Emerald 200 */
+}
+.success .title { color: #065f46; }
+.success .message { color: #065f46; opacity: 0.8; }
+.success::before { background-color: #10b981; }
+
+.error {
+  background-color: #fef2f2; /* Red 50 */
+  border-color: #fecaca; /* Red 200 */
+}
+.error .title { color: #991b1b; }
+.error .message { color: #991b1b; opacity: 0.8; }
+.error::before { background-color: #ef4444; }
+
+.warning {
+  background-color: #fffbeb; /* Amber 50 */
+  border-color: #fde68a; /* Amber 200 */
+}
+.warning .title { color: #92400e; }
+.warning .message { color: #92400e; opacity: 0.8; }
+.warning::before { background-color: #f59e0b; }
+
+.info {
+  background-color: #eff6ff; /* Blue 50 */
+  border-color: #bfdbfe; /* Blue 200 */
+}
+.info .title { color: #1e40af; }
+.info .message { color: #1e40af; opacity: 0.8; }
+.info::before { background-color: #3b82f6; }
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(40px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}

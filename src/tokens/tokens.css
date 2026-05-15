@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* --- Colors (Indigo & Slate Scale) --- */
+  --ayo-primary-50: #eef2ff;
+  --ayo-primary-100: #e0e7ff;
+  --ayo-primary-200: #c7d2fe;
+  --ayo-primary-300: #a5b4fc;
+  --ayo-primary-400: #818cf8;
+  --ayo-primary-500: #6366f1; /* Main */
+  --ayo-primary-600: #4f46e5; /* Hover */
+  --ayo-primary-700: #4338ca; /* Active */
+  --ayo-primary-900: #312e81;
+
+  --ayo-slate-50: #f8fafc;
+  --ayo-slate-100: #f1f5f9;
+  --ayo-slate-200: #e2e8f0;
+  --ayo-slate-300: #cbd5e1;
+  --ayo-slate-400: #94a3b8;
+  --ayo-slate-500: #64748b;
+  --ayo-slate-600: #475569;
+  --ayo-slate-700: #334155;
+  --ayo-slate-800: #1e293b;
+  --ayo-slate-900: #0f172a;
+
+  /* Status Colors */
+  --ayo-success: #10b981;
+  --ayo-success-subtle: #ecfdf5;
+  --ayo-warning: #f59e0b;
+  --ayo-warning-subtle: #fffbeb;
+  --ayo-danger: #ef4444;
+  --ayo-danger-subtle: #fef2f2;
+  --ayo-info: #3b82f6;
+  --ayo-info-subtle: #eff6ff;
+
+  /* Semantic Mapping */
+  --ayo-color-primary: var(--ayo-primary-500);
+  --ayo-color-primary-hover: var(--ayo-primary-600);
+  --ayo-color-primary-active: var(--ayo-primary-700);
+  --ayo-color-primary-subtle: var(--ayo-primary-50);
+  
+  --ayo-color-text: var(--ayo-slate-900);
+  --ayo-color-text-muted: var(--ayo-slate-500);
+  --ayo-color-border: var(--ayo-slate-200);
+  --ayo-color-surface: #ffffff;
+  --ayo-color-surface-raised: #ffffff;
+
+  /* --- Typography --- */
+  --ayo-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --ayo-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* --- Border Radius (Modern & Rounded) --- */
+  --ayo-radius-sm: 6px;
+  --ayo-radius-md: 10px;
+  --ayo-radius-lg: 16px;
+  --ayo-radius-xl: 24px;
+  --ayo-radius-full: 9999px;
+
+  /* --- Shadows (Multi-layered Premium) --- */
+  --ayo-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --ayo-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --ayo-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --ayo-shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  
+  /* Inner shadow for buttons */
+  --ayo-shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.06);
+
+  /* --- Transitions --- */
+  --ayo-transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --ayo-transition-base: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --ayo-transition-slow: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Global Reset for Components */
+* {
+  font-family: var(--ayo-font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

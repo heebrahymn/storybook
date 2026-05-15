@@ -1,0 +1,94 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(15, 23, 42, 0.5); /* Slate 900 with opacity */
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.modal {
+  background-color: var(--ayo-color-surface);
+  border-radius: var(--ayo-radius-lg);
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--ayo-shadow-xl);
+  overflow: hidden;
+  animation: slideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid var(--ayo-slate-200);
+}
+
+.header {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--ayo-color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ayo-color-text);
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--ayo-color-text-muted);
+  line-height: 1;
+  padding: 4px;
+  border-radius: var(--ayo-radius-sm);
+  transition: var(--ayo-transition-fast);
+}
+
+.closeButton:hover {
+  background-color: var(--ayo-slate-100);
+  color: var(--ayo-color-text);
+}
+
+.body {
+  padding: 24px;
+  overflow-y: auto;
+  font-size: 1rem;
+  color: var(--ayo-slate-600);
+  line-height: 1.6;
+}
+
+.footer {
+  padding: 16px 24px;
+  border-top: 1px solid var(--ayo-color-border);
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  background-color: var(--ayo-slate-50);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { 
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

@@ -1,0 +1,62 @@
+.accordion {
+  border: 1px solid var(--ayo-slate-200);
+  border-radius: var(--ayo-radius-lg);
+  overflow: hidden;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.item {
+  border-bottom: 1px solid var(--ayo-slate-200);
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.trigger {
+  width: 100%;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--ayo-slate-800);
+  transition: var(--ayo-transition-base);
+  text-align: left;
+  font-size: 0.9375rem;
+}
+
+.trigger:hover:not(:disabled) {
+  background-color: var(--ayo-slate-50);
+}
+
+.trigger:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.trigger .icon {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--ayo-slate-400);
+}
+
+.trigger[data-state='expanded'] .icon {
+  transform: rotate(180deg);
+}
+
+.content {
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+  background-color: #ffffff;
+}
+
+.contentInner {
+  padding: 0 20px 20px 20px;
+  color: var(--ayo-slate-600);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}

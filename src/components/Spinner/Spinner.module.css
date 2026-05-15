@@ -1,0 +1,27 @@
+.spinner {
+  border: 3px solid var(--ayo-slate-200);
+  border-top-color: var(--ayo-color-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  display: inline-block;
+}
+
+.sm { width: 16px; height: 16px; border-width: 2px; }
+.md { width: 24px; height: 24px; border-width: 3px; }
+.lg { width: 40px; height: 40px; border-width: 4px; }
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

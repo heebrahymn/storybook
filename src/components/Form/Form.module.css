@@ -1,0 +1,33 @@
+.formItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ayo-space-1);
+  margin-bottom: var(--ayo-space-4);
+  width: 100%;
+}
+
+.label {
+  font-family: var(--ayo-font-sans);
+  font-size: var(--ayo-text-sm);
+  font-weight: var(--ayo-font-medium);
+  color: var(--ayo-color-text);
+}
+
+.required::after {
+  content: ' *';
+  color: var(--ayo-color-danger);
+}
+
+.errorText {
+  font-family: var(--ayo-font-sans);
+  font-size: var(--ayo-text-xs);
+  color: var(--ayo-color-danger);
+  margin-top: var(--ayo-space-1);
+}
+
+.helperText {
+  font-family: var(--ayo-font-sans);
+  font-size: var(--ayo-text-xs);
+  color: var(--ayo-color-text-muted);
+  margin-top: var(--ayo-space-1);
+}
