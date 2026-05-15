@@ -87,4 +87,4 @@ We welcome contributions! Please see our [CONTRIBUTING.md](./CONTRIBUTING.md) fo
 
 ## 📄 License
 
-MIT © [Ayodele Ibraheem](https://github.com/ayodele)
+MIT © [Ayodele Bankole](https://github.com/heebrahymn)

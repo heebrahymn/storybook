@@ -41,7 +41,7 @@
     "wcag",
     "typescript"
   ],
-  "author": "Ayodele Ibraheem",
+  "author": "Ayodele Bankole",
   "license": "MIT",
   "peerDependencies": {
     "react": "^19.2.6",
